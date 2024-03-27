@@ -1,0 +1,36 @@
+footer {
+	display: flex;
+	justify-content: center;
+	background: #805f49;
+}
+
+footer .container {
+	display: flex;
+	justify-content: space-around;
+	padding: 50px;
+	color: white;
+	line-height: 150%;
+}
+
+footer a {
+	color: white;
+	text-decoration: none;
+}
+
+footer a:hover {
+	text-decoration: underline;
+}
+
+footer h3 {
+	font-size: 1.5em;
+	margin: 0.75em 0;
+}
+
+footer table th {
+	font-weight: bold;
+	text-align: right;
+	padding-right: 1em;
+}
+
+
+
