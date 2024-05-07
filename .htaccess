@@ -1,0 +1,8 @@
+#zapnuti modulu pro prepisovani modulu
+RewriteEngine On
+
+#pokud prijde pozadavek na jakekoli url, co neexistuje, napr. /kontakt nebo /blabla, tak misto toho zmenit url na index.php?stranka=TOCOJEVURL
+# takze napr. /kontakt se zmeni na index.php?stranka=kontakt
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule (.+) index.php?stranka=$1 [L,QSA]
